@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/min_margin"
+    android:layout_marginStart="@dimen/min_margin"
+    android:layout_marginLeft="@dimen/min_margin"
+    android:layout_marginBottom="@dimen/min_margin"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/calificacion"
+            android:textSize="@dimen/sizeLetterButton"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/marginLetter"
+            android:layout_marginRight="@dimen/marginLetter"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|end"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:scaleType="fitStart"
+            android:src="@drawable/hueso_amarillo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
